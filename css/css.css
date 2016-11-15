@@ -32,20 +32,26 @@ main{
 .input-wrap{
     position: relative;
     height: .70rem;
-    margin-bottom: .30rem;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    margin-bottom: .15rem;
     /*border: .02rem solid rebeccapurple;*/
 }
 .input-wrap >img{
+	position:  absolute;
+	left: 0.2rem;
+	top: 0.1rem;
     vertical-align:middle;
     margin-left: 0;
     width: .5rem;
     height: .5rem;
 }
 .input-wrap >input{
-    margin-left: .2rem;
+    /*margin-left: .2rem;*/
     height: .7rem;
     font-size: .24rem;
-    text-indent: .25rem;
+    text-indent: .8rem;
     border: 1px solid #de7208;
     border-radius: 4px;
     background: initial;
@@ -54,10 +60,15 @@ main{
     border-color:#76a926;
 }
 #img-code{
+	position: absolute;
+	right: 0;
+	top: 0;
+	left: auto;
     float: right;
     margin-right: 0.13rem;
     width: 2rem;
     height: .7rem;
+    display: block;
 }
 .btn-code{
     float: right;
@@ -73,11 +84,18 @@ main{
     color: white;
 }
 .input-big{
-    width: 6rem;
+    width: 6.8rem;
 }
 .input-small{
-    width: 3.5rem;
+    width: 4.3rem;
 }
+
+.input-big::-webkit-input-placeholder{color:#de7208;}
+.input-big::-moz-placeholder{color:#de7208;}
+.input-big:-moz-placeholder{color:#de7208;}
+.input-small::-webkit-input-placeholder{color:#de7208;}
+.input-small::-moz-placeholder{color:#de7208;}
+.input-small:-moz-placeholder{color:#de7208;}
 .ckeck-wrap{
     position: relative;
     height: .25rem;
